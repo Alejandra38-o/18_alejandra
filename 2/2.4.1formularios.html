@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>2.4.1 Formularios</title>
+</head>
+
+<body>
+
+    <h1>2.4.1 Formularios:</h1>
+    <form>
+        <fieldset>
+            <legend>Personaje</legend>
+            <label>Superhéroe favorito:</label>
+            <input list="superhéroe" name="personaje" placeholder="Elige tu Superhéroe" />
+            <datalist id="superhéroe">
+                <option label="spiderman">Spiderman</option>
+                <option label="wonder woman">Wonder Woman</option>
+                <option label="iron man">Iron Man</option>
+                <option label="batman">Batman</option>
+                <option label="superman">Superman</option>
+                <option label="catwoman">Cat Woman</option>
+            </datalist>
+            <br>
+            <br>
+            <input type="color">
+        </fieldset>
+        <fieldset>
+            <legend>Datos de user</legend>
+            <label>Nombre</label>
+            <br>
+            <input type="text">
+            <br>
+            <br>
+            <label>Teléfono</label>
+            <input type="text">
+            <br>
+
+        </fieldset>
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+
+</body>
+
+</html>

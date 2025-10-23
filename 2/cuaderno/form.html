@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Formulario básico</title>
+</head>
+
+<body>
+    <h2>Formulario básico</h2>
+
+    <form action="procesar.php" method="post">
+        <fieldset>
+            <legend>Datos alumno</legend>
+            <label>Nombre:</label>
+            <input type="text" name="Nombre" />
+            <br>
+            <br>
+            <label>Edad:</label>
+            <input type="number" name="Edad" placeholder="Ponga su edad aqui" />
+        </fieldset>
+        <fieldset>
+            <legend>Datos del centro</legend>
+            <label>Código del centro</label>
+        </fieldset>
+        <br><br>
+        <hr>
+        <br>
+        <br>
+        <label>Frutas select</label>
+        <select name="fruta" id="fruta">
+            <option value="">_________</option>
+            <optgroup label="Temporada">
+                <option value="bannana">Bannana</option>
+                <option value="naranja">Naranja</option>
+            </optgroup>
+            <optgroup label="Tropicales">
+            <option value="fresa">Fresa</option>
+            <option value="piña">Piña</option>
+            </optgroup>
+        </select>
+        <br>
+        <br>
+        <br>
+        <label>Frutas</label>
+        <input list="frutas" name="frutas" placeholder="Elige la fruta">
+        <datalist id="frutas">
+            <option label="bannnana">Bannana</option>
+            <option label="naranja">Naranja</option>
+            <option label="fresa">Fresa</option>
+            <option label="piña">Piña</option>
+        </datalist>
+        <br>
+        <br>
+        <input type="submit" value="Enviar">
+
+    </form>
+</body>
+
+</html>
