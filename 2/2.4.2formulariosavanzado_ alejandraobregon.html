@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>2.4.2 Formularios Avanzados</title>
+</head>
+
+<html>
+
+<head>
+    <style>
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input[type=radio]+label,
+        input[type=checkbox]+label {
+            display: inline;
+        }
+
+        input[type=submit],
+        button[type=submit],
+        button[type=reset] {
+            display: inline;
+            margin-right: 10px;
+            margin-top: 15px;
+            color: white;
+            border-radius: 10px;
+        }
+
+        input[type=submit], button[type=submit] {
+            background-color: rgb(79, 60, 96);
+        }
+
+        button[type=reset] {
+            background-color: rgb(196, 76, 20);
+        }
+
+        *:required {
+            border-color: gold;
+        }
+    </style>
+</head>
+
+<body>
+     <h1>2.4. Formularios Avanzados:</h1>
+    <form>
+        <fieldset>
+            <legend>Personaje</legend>
+            <label>Superhéroe favorito:</label>
+            <input list="superhéroe" name="personaje" placeholder="Elige tu Superhéroe" />
+            <datalist id="superhéroe">
+                <option label="spiderman">Spiderman</option>
+                <option label="wonder woman">Wonder Woman</option>
+                <option label="iron man">Iron Man</option>
+                <option label="batman">Batman</option>
+                <option label="superman">Superman</option>
+                <option label="catwoman">Cat Woman</option>
+            </datalist>
+            <br>
+            <br>
+            <input type="color" name="color">
+        </fieldset>
+
+        <fieldset>
+            <legend>Datos de user</legend>
+            <label>Nombre</label><br>
+            <input type="text" name="nombre" placeholder="Ponga aquí su nombre"><br><br>
+            <label>Teléfono</label>
+            <input type="number" name="telefono" placeholder="Ponga auí su número"><small>Teléfono 9999999</small><br><br>
+            <label>Fecha</label>
+            <input type="date" name="fecha"><br><br>
+            <label>Contraseña</label>
+            <input type="password" name="contraseña" placeholder="Ponga aquí su contraseña">
+        </fieldset>
+
+        <br><br>
+
+        <fieldset>
+            <legend>Selecciona la forma de contacto preferida: </legend>
+            <input type="radio" name="email" value="email">Email
+            <input type="radio" name="telefono" value="telefono">Teléfono
+            <input type="radio" name="carta" value="carta">Carta
+        </fieldset>
+
+        <br><br>
+
+        <fieldset>
+            <legend>Elige tus asignaturas favoritas: </legend>
+            <input type="checkbox" name="appweb" value="appweb">Aplicaciones Web
+            <input type="checkbox" name="seguridad" value="seguridad">Seguridad informática
+        </fieldset>
+
+        <br><br>
+
+        <fieldset>
+            <legend>Tipos extra</legend>
+            <label>Dime la semana en la que te gustaría asistir</label>
+            <input type="week" name="semana"><br><br>
+            <label>En qué mes cumples?</label>
+            <input type="month" name="semana"><br><br>
+            <label>Dime como de feliz estas</label>
+            <input type="range" name="rango">
+            <label>Inserta la url de la empresa en la que trabajas</label>
+            <input type="url" name="enlace" placeholder="Escribe url">
+            <label>Pon aquí tu curriculum</label>
+            <input type="file" name="archivo">
+        </fieldset>
+        <br>
+        <input type="submit" value="Enviar">
+        <input type="reset">
+     </form>
+</body>
+
+</html>
