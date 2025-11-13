@@ -1,0 +1,32 @@
+h1 {
+    color: aqua;
+}
+
+h2 {
+    color: blueviolet;
+}
+
+#comentario {
+    color: green;
+}
+
+.negrita {
+    font-weight: bold;
+}
+
+span {
+    font-weight: bold;
+}
+
+.upp {
+    color: gray;
+}
+
+.hojas {
+    color: red;
+}
+
+.colnegri {
+    color: blue;
+    font-weight: bold;
+}

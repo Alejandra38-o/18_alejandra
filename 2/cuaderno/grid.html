@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            html,
+            body{
+                padding: 0;
+                margin: 0;
+            }
+            .container{
+                display: grid;
+                grid-template-rows: 25% 50% 25%;
+                grid-template-columns: 50% 25% 25%;
+                grid-template-areas: 
+                "header header header"
+                "main . aside"
+                "footer footer footer"
+                ;
+                height: 100vh;
+            }
+            header{
+                grid-area: header;
+                background-color: aquamarine;
+            }
+            main{
+                grid-area: main;
+                background-color: pink;
+            }
+            aside{
+                grid-area: aside;
+                background-color: violet;
+            }
+            footer{
+                grid-area: footer;
+                background-color: beige;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>HEADER</h1>
+            </header>
+            <main>
+                <h1>MAIN</h1>
+            <section>
+                <h2>Sección 2</h2>
+                <article>
+                    <p>Hola articulo 2</p>
+                </article>
+            </section>
+            </main>
+            <aside>
+                <h1>ASIDE</h1>
+            </aside>
+            <footer>
+                <h1>FOOTER</h1>
+            </footer>
+        </div>
+    </body>
+</html>
