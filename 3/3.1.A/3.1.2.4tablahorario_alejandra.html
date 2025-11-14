@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Horario 2º SMR 24/25 </title>
+    <style>
+        caption {
+            background-color: #3d004d;
+            border-radius: 12px;
+            color: white;
+            padding: 2%;
+            margin-bottom: 2%;
+            font-size: 22px;
+            font-weight: bold;
+
+        }
+
+        td {
+            padding: 2%;
+            text-align: center;
+            vertical-align: middle;
+            width: 10%;
+            height: 60%;
+            border: 5px outset;
+            margin: 2%;
+
+        }
+
+        th {
+            background-color: rgb(106, 160, 211);
+            text-align: center;
+            vertical-align: middle;
+            width: 10%;
+            margin: 2%;
+            padding: 2%;
+            border: 5px outset;
+            color: rgb(11, 40, 78);
+        }
+
+        .horas {
+            background-color: rgb(38, 85, 173);
+            color: white;
+        }
+
+        #hueco {
+            background-color: white;
+            border: none;
+        }
+
+        .recreo {
+            background-color: rgba(250, 252, 147, 0.986);
+        }
+        .recreo:hover {
+            background-color: rgba(177, 179, 88, 0.986);
+            cursor: pointer;
+        }
+
+        .sor {
+            background-color: rgb(103, 245, 245);
+        }
+        .sor:hover {
+            background-color: rgb(51, 124, 124);
+        }
+
+        .servred {
+            background-color: rgb(240, 128, 165);
+            cursor: pointer;
+        }
+
+        .servred:hover {
+            background-color: rgb(116, 29, 58);
+            cursor: pointer;
+        }
+
+        .ingles {
+            background-color: rgb(185, 241, 73);
+        }
+        .ingles:hover {
+            background-color: rgb(95, 124, 36);
+            cursor: pointer;
+        }
+
+        .seg {
+            background-color: rgb(243, 179, 59);
+        }
+        .seg:hover {
+            background-color: rgb(136, 98, 29);
+            cursor: pointer;
+        }
+
+        .pyth {
+            background-color: rgb(169, 78, 253);
+        }
+        .pyth:hover {
+            background-color: rgb(92, 24, 156);
+            cursor: pointer;
+        }
+
+        .sost {
+            background-color: rgb(231, 82, 82);
+        }
+        .sost:hover {
+            background-color: rgb(109, 36, 36);
+            cursor: pointer;
+        }
+
+        .digi {
+            background-color: rgb(255, 85, 255);
+        }
+        .digi:hover {
+            background-color: rgb(100, 31, 100);
+            cursor: pointer;
+        }
+
+        .empl {
+            background-color: rgb(51, 216, 161);
+        }
+        .empl:hover {
+            background-color: rgb(27, 105, 79);
+            cursor: pointer;
+        }
+
+        .appw {
+            background-color: rgb(115, 248, 126);
+        }
+        .appw:hover {
+            background-color: rgb(33, 116, 40);
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="1">
+        <caption>Horario 2º SMR 24/25</caption>
+        <thead>
+            <tr>
+                <th id="hueco"></th>
+                <th class="th">Lunes</th>
+                <th class="th">Martes</th>
+                <th class="th">Miercoles</th>
+                <th class="th">Jueves</th>
+                <th class="th">Viernes</th>
+            </tr>
+
+        </thead>
+        <tbody>
+
+            <tr>
+                <td class="horas">9:25</td>
+                <td rowspan="2" class="sor">SOR</td>
+                <td rowspan="2" class="sor">SOR</td>
+                <td rowspan="2" class="sor">SOR</td>
+                <td rowspan="2" class="servred">SERV RED</td>
+                <td class="servred">SERV RED</td>
+            </tr>
+            <tr>
+                <td class="horas">10:25</td>
+                <td class="empl">ITI EMP</td>
+            </tr>
+            <tr>
+                <td class="horas">11:20</td>
+                <td class="appw">APP WEB</td>
+                <td class="ingles">INGLES</td>
+                <td class="servred">SERV RED</td>
+                <td class="pyth">PYTHON</td>
+                <td class="seg">SEGURIDAD</td>
+            </tr>
+            <tr>
+                <td class="horas">11:15</td>
+                <td colspan="5" class="recreo">RECREO</td>
+            </tr>
+            <tr>
+                <td class="horas">11:40</td>
+                <td rowspan="2" class="pyth">PYTHON</td>
+                <td class="sost">SOSTENIBILIDAD</td>
+                <td class="servred">SERV RED</td>
+                <td class="appw">APP WEB</td>
+                <td class="seg">SEGURIDAD</td>
+            </tr>
+            <tr>
+                <td class="horas">12:35</td>
+                <td rowspan="2" class="servred">SERV RED</td>
+                <td class="digi">DIGI</td>
+                <td class="sor">SOR</td>
+                <td rowspan="2" class="appw">APP WEB
+                </td>
+            </tr>
+            <tr>
+                <td class="horas">13:30</td>
+                <td class="seg">SEGURIDAD</a>
+                </td>
+                <td class="empl">ITI EMP</td>
+                <td class="ingles">INGLES</td>
+            </tr>
+            <tr>
+                <td class="horas">14:25</td>
+                <td colspan="5" class="recreo">RECREO</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
