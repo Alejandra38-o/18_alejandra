@@ -20,8 +20,6 @@ header img {
     border-radius: 20%;
 }
 
-
-
 nav ul {
     display: flex;
     flex-direction: row;
@@ -42,10 +40,6 @@ nav ul li a {
     display: flex;
 }
 
-nav ul li a:hover{
-    background-color: rgb(58, 143, 212);
-    cursor: pointer;
-}
 
 
 
