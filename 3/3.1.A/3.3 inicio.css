@@ -2,6 +2,14 @@ body {
     margin: 0px;
 }
 
+h1 {
+    font-size: 40px;
+}
+
+section h3 {
+    color: rgb(49, 158, 231);
+}
+
 header {
     background-image: url(../../2/assets/img/co1sTND6kmA43OYKFppf1.webp);
     background-size: cover;
@@ -20,14 +28,12 @@ header img {
     border-radius: 20%;
 }
 
-
-
 nav ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     list-style-type: none;
-    border-bottom:2px solid ; color: white;
+    color: white;
 
 }
 
@@ -42,40 +48,66 @@ nav ul li a {
     display: flex;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
     background-color: rgb(58, 143, 212);
     cursor: pointer;
 }
 
 
+ul>li {
 
+    list-style-type: none;
+}
 
+#skills ul>li:before {
+    content: "►";
+    padding-right: 0.5em;
+    color: #34aaee;
+}
 
-
-
-
-
-
-
-
-
-
-nav li:hover{
+nav li:hover {
     cursor: pointer;
 }
 
-nav li.active:hover{
+nav li.active:hover {
     cursor: pointer;
 }
 
-nav a{
+section {
+    padding-left: 30px;
+}
+
+nav a {
     color: white;
     text-decoration: none;
 }
 
-#skills article > div{
+section {
+    border-bottom: 1px solid rgb(87, 190, 238);
+}
+
+#skills article>div {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-areas: "";
+
 }
 
+
+footer {
+    grid-area: auto;
+    background-color: rgb(119, 194, 255);
+    text-align: right;
+    min-height: 0px;
+    padding: 15px;
+}
+
+.idiomas ul>li:before {
+    content: "*";
+    padding-right: 0.5em;
+    color: #34aaee;
+}
+
+#formacion article p{
+    padding: 20px;
+}
