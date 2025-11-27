@@ -1,6 +1,7 @@
 body {
     margin: 0px;
     text-align: center;
+    
 }
 
 h1 {
@@ -47,11 +48,13 @@ nav ul li a {
     margin: 10px;
     border-radius: 15%;
     display: flex;
+    
 }
 
 
 section {
     padding-left: 30px;
+    margin: 60px;
 }
 
 footer {
@@ -60,8 +63,13 @@ footer {
     text-align: right;
     min-height: 0px;
     padding: 15px;
+    margin-top: 100vh ;
 }
 
 #contacto article p{
     padding: 20px;
+}
+
+article a{
+    color: black;
 }
