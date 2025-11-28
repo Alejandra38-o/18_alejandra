@@ -73,10 +73,6 @@ nav li.active:hover {
     cursor: pointer;
 }
 
-section {
-    padding-left: 30px;
-}
-
 nav a {
     color: white;
     text-decoration: none;
@@ -84,6 +80,8 @@ nav a {
 
 section {
     border-bottom: 1px solid rgb(87, 190, 238);
+    padding-left: 30px;
+
 }
 
 #skills article>div {
@@ -91,6 +89,25 @@ section {
     grid-template-columns: 50% 50%;
     grid-template-areas: "";
 
+}
+
+.idiomas ul>li:before {
+    content: "*";
+    padding-right: 0.5em;
+    color: #34aaee;
+}
+
+#formacion article p {
+    padding: 20px;
+}
+
+
+#contacto article p {
+    padding: 20px;
+}
+
+article a {
+    color: black;
 }
 
 
@@ -102,12 +119,6 @@ footer {
     padding: 15px;
 }
 
-.idiomas ul>li:before {
-    content: "*";
-    padding-right: 0.5em;
-    color: #34aaee;
-}
-
-#formacion article p{
-    padding: 20px;
+#github{
+    min-height: 50vh;
 }
