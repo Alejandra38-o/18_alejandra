@@ -1,19 +1,47 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF8">
+
+<head>
+    <meta charset="UTF8">
+
+    <style>
+        /*-------------CSS-----*/
+        body {
+            padding: 15px;
+        }
+        #mensaje{
+            background-color: pink;
+            min-height: 10px;
+
+        }
+    </style>
+    <script src="prueba1.js"></script>
+</head>
+
+<body>
+    <!-- comentario html-->
+    <h1>pruebas</h1>
+
+    <form>
+        <label>Nombre: </label>
+        <input type="text" id="nombre" name="nombre">
+<br>
+        <label>Contraseña: </label>
+        <input type="password" id="pass1" name="pass1" />
+        <br>
+        <label>Repita la contraseña: </label>
         
-        <style>
-            /*-------------CSS-----*/
-            body{
-                padding: 15px;
-            }
-        </style>
-        <script src="prueba1.js"></script>
-    </head>
-    <body>
-        <!-- comentario html-->
-        <h1>pruebas</h1>
-       
-    </body>
+        <input type="password" id="pass2" name="pass2">
+<br>
+        <input type="submit" onclick="enviarFormulario()" />
+
+    </form>
+    <button onclick="enviarFormulario()">Enviar</button>
+
+    <div id="mensajes" onmouseenter="cambiaColor('yellow')" onmouseleave="cambiaColor('pink')">
+
+    </div>
+    
+</body>
+
 </html>
